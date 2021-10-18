@@ -3,5 +3,6 @@ public class App {
         System.out.println("Feladat 0315");
         Calcer calcer = new Calcer();
         calcer.getSides();
+        System.out.println(calcer.calcArea());
     }
 }
