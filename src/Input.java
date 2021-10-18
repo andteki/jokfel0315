@@ -1,9 +1,13 @@
 import java.util.Scanner;
 
 public class Input {
-    Scanner scanner;
-    public void input(String message) {
+    static Scanner scanner;
+    public Input() {
+        scanner = new Scanner(System.in);
+    }
+    public static double input(String message) {
         System.out.print(message + ": ");
-        double num = this.scanner.nextDouble();
+        double num = scanner.nextDouble();
+        return num;
     }
 }
